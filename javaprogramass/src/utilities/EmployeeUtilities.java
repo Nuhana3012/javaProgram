@@ -1,0 +1,22 @@
+package com.nuhana.assisgment. utilities;
+import com.nuhana.assisgnment.employees.Employee;
+
+public class EmployeeUtilities {
+    public static void printEmployeeDetails(Employee emp) {
+        System.out.println("Employee ID: " + emp.getEmployeeId());
+        System.out.println("Name: " + emp.getName());
+        System.out.println("Salary: " + emp.getSalary());
+        System.out.println("--------------------------");
+    }
+    public static void increaseSalary(Employee emp, double amount) {
+        double newSalary = emp.getSalary() + amount;
+        emp.setSalary(newSalary);
+    }
+}
+
+
+
+
+	
+
+
